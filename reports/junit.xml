@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.426" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-08-07T03:05:37" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="ReqRes" timestamp="2024-08-07T03:05:37" tests="2" file="/Users/anudeep/Documents/my/repos/test-results-reporter/example-pactum-mocha-testbeats/tests/sample.spec.js" time="0.425" failures="0">
+    <testcase name="ReqRes create a new user" time="0.410" classname="create a new user">
+    </testcase>
+    <testcase name="ReqRes fetch user with id" time="0.011" classname="fetch user with id">
+    </testcase>
+  </testsuite>
+</testsuites>

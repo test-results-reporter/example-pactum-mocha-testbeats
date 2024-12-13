@@ -1,0 +1,38 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:20.0
+
+    steps:
+      - checkout
+
+      # - restore_cache:
+      #     keys:
+      #       - node-deps-{{ checksum "package-lock.json" }}
+      #       - node-deps-
+
+      # - run:
+      #     name: Install Dependencies
+      #     command: npm install
+
+      # - save_cache:
+      #     paths:
+      #       - node_modules
+      #     key: node-deps-{{ checksum "package-lock.json" }}
+
+      # - run:
+      #     name: Run Tests
+      #     command: npm test
+
+      - run:
+          name: Print Env
+          command: env
+
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build
